@@ -1,0 +1,458 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+
+  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 86.45%;
+	padding-left: 2.275%;
+	padding-right: 2.275%;
+	clear: none;
+	float: none;
+}
+#div1 {
+}
+.header {
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #000;
+}
+.left {
+	width: 100%;
+	text-align: center;
+	
+}
+
+.right {
+	width: 100%;
+	margin-left: 0;
+	clear: both;
+	text-align: center;
+	
+}
+.musthead {
+	width: 100%;
+	margin-left: 0;
+	clear: both;
+	text-align: center;
+}
+.dateline {
+}
+.date1 {
+width: 100%;
+margin-left: 0;
+clear: both;
+}
+.date2 {
+width: 100%;
+margin-left: 0;
+clear: both;
+}
+.left_col {
+width: 100%;
+}
+.mid_col {
+width: 100%;
+margin-left: 0;
+clear: both;
+}
+.right_col {
+width: 100%;
+margin-left: 0;
+clear: both;
+}
+.heading1 {
+}
+.sub_head1 {
+}
+.sub1 {
+}
+.head1 {
+}
+.story1 {
+width: 100%;
+}
+.story1{column-count: 2;-moz-column-count: 2;-webkit-column-count: 2;}
+.mid_content {
+}
+.mid_super {
+}
+.mid_heading {
+}
+.mid_bottom {
+}
+.mid_bottom_heading {
+}
+.mid_bottom_story {column-count: 2;-moz-column-count: 2;-webkit-column-count: 2;
+}
+.right_heading {
+}
+.right_story {
+}
+.footer {
+}
+.footer_content {
+}
+.footer_story {
+}
+.zeroMargin_mobile {
+margin-left: 0;
+}
+
+@media only screen and (max-width: 481px) {
+
+.hide_mobile {
+display: none;
+}
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+
+.story1{column-count: 2;-moz-column-count: 2;-webkit-column-count: 2;}
+.mid_col{border-bottom: 1px solid #000}
+.heading1{text-align:center}
+.mid_story{
+	column-count: 3;
+	-moz-column-count: 3;
+	border: 1px solid #000;
+	padding: 3px;
+	-webkit-column-count: 3;
+	margin-top: 0;
+}
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#div1 {
+}
+.header {
+}
+.left {
+width: 23.0769%;
+}
+.musthead {
+width: 48.7179%;
+clear: none;
+margin-left: 2.5641%;
+}
+.right {
+width: 23.0769%;
+clear: none;
+margin-left: 2.5641%;
+}
+.dateline {
+}
+.date1 {
+width: 48.7179%;
+clear: both;
+margin-left: 0;
+}
+.date2 {
+width: 48.7179%;
+clear: none;
+margin-left: 2.5641%;
+}
+.left_col {
+width: 100%;
+}
+.mid_col {
+width: 100%;
+clear: both;
+margin-left: 0;
+}
+.right_col {
+width: 100%;
+clear: both;
+margin-left: 0;
+}
+.heading1 {
+}
+.sub_head1 {
+}
+.sub1 {
+}
+.head1 {
+}
+.story1 {
+width: 100%;
+}
+.mid_content {
+}
+.mid_super {
+}
+.mid_heading {
+}
+.mid_bottom {
+	width: 48%;
+	display: inline-block;
+	padding:5px;
+	
+
+.tail_story{width:48%; padding:5px;display:inline-block; }
+.mid_bottom_heading {
+}
+.mid_bottom_story {
+}
+.right_heading {
+}
+.right_story {
+}
+.footer {
+}
+.footer_content {
+}
+.footer_story {
+}
+.hide_tablet {
+display: none;
+}
+.zeroMargin_tablet {
+margin-left: 0;
+}
+.mid_bottom_story{
+	column-count: 2;
+	-moz-column-count: 2;
+	
+
+	-webkit-column-count: 2;
+	margin-top: 0;
+}
+
+.story1{column-count: 4;-moz-column-count: 4;-webkit-column-count: 4;}
+.page_story{column-count: 2;-moz-column-count: 2;-webkit-column-count: 2;}
+
+
+
+}
+
+
+
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.mid_col{border-bottom:0px}
+.story1{column-count: 2;-moz-column-count: 2;-webkit-column-count: 2;}
+.mid_story{
+	column-count: 3;
+	-moz-column-count: 3;
+	border: 1px solid #000;
+	padding: 3px;
+	-webkit-column-count: 3;
+	margin-top: 0;
+}
+.mid_bottom_story{
+	column-count: 1;
+	-moz-column-count: 1;
+	
+	padding: 3px;
+	-webkit-column-count: 2;
+	margin-top: 0;
+}
+.gridContainer {
+	width: 88.5%;
+	max-width: 1232px;
+	padding-left: 0.75%;
+	padding-right: 0.75%;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#div1 {
+}
+.header {
+}
+.left {
+width: 23.7288%;
+}
+.musthead {
+width: 49.1525%;
+clear: none;
+margin-left: 1.6949%;
+}
+.right {
+width: 23.7288%;
+clear: none;
+margin-left: 1.6949%;
+}
+.dateline {
+}
+.date1 {
+width: 49.1525%;
+clear: none;
+margin-left: 1.6949%;
+}
+.date2 {
+width: 49.1525%;
+clear: none;
+margin-left: 1.6949%;
+}
+.left_col {
+width: 32.2033%;
+}
+.mid_col {
+	width: 47.1525%;
+	clear: none;
+	margin-left: 1.6949%;
+}
+.tail_story{width:100%;  }
+.right_col {
+width: 15.2542%;
+clear: none;
+margin-left: 1.6949%;
+}
+.heading1{text-align:left}
+.sub_head1 {
+}
+.sub1 {
+}
+.head1 {
+}
+.story1 {
+width: 100%;
+}
+.mid_content {
+	width: 95%;
+}
+.mid_super {
+}
+.mid_heading {
+}
+.mid_pic {
+	max-height: 250px;
+	max-width: 100%;
+}
+.mid_bottom {
+	width: 100%;
+}
+.mid_bottom_heading {
+}
+.mid_bottom_story {
+}
+.right_heading {
+}
+.right_story {
+}
+.footer {
+}
+.footer_content {
+}
+.footer_story {
+}
+.zeroMargin_desktop {
+margin-left: 0;
+}
+.hide_desktop {
+display: none;
+}
+p.page_story{column-count: 4;-moz-column-count: 4;-webkit-column-count: 4;}
+
+}
+
+
+
+
+@media only screen and (min-width:620px){
+.page_story{column-count: 2;-moz-column-count: 2;-webkit-column-count: 2;}
+
+.mid_bottom {
+	width: 45%;
+	display: inline-block;
+	padding:5px;
+	}
+	
+.mid_story{
+	column-count: 2;
+	-moz-column-count: 2;
+	border: 1px solid #000;
+	padding: 3px;
+	-webkit-column-count: 2;
+	margin-top: 0;
+}
+.story1{column-count: 2;-moz-column-count: 2;-webkit-column-count: 2;}
+.tail_story{width:100%; padding:5px;display:inline-block;margin:5px; }
+
+
+@media only screen and (max-width:460px){
+.page_story{column-count: 2;-moz-column-count: 2;-webkit-column-count: 2;}
+
+.tail_story{width:43%; padding:2px;display:inline-block;margin:5px;}
+.mid_story{
+	column-count: 2;
+	-moz-column-count: 2;
+	border: 1px solid #000;
+	padding: 3px;
+	-webkit-column-count: 2;
+	margin-top: 0;
+}
+.fluid.header .fluid.right {
+}
+.left {
+	display: none;
+
+}
+.right {
+	display: none;
+
+}
+.mid_col{border-bottom: 1px solid #000}
+
+.fluid.header .fluid.right {
+}
+.date2 {
+	display: none;
+}
+.story1{column-count: 2;-moz-column-count: 2;-webkit-column-count: 2;}
+}
